@@ -1,0 +1,15 @@
+//Дано рядок. Вивести рядок, що містить ті ж символи, але розташовані у зворотному порядку.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <cs50.h>
+#include <string.h>
+int main ()
+{
+    string s = get_string(Введіть текст: );
+    for(int i = strlen(s); i > 0; i--)
+    {
+        printf("%c", s[i]);
+    }
+    return 0;
+}
